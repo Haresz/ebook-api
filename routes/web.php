@@ -18,17 +18,17 @@ Route::get('/', function () {
 });
 
 // string
-Route::get('coba', function () {
+Route::get('/coba', function () {
     return "haloo:D";
 });
 
 // array
-Route::get('coba1', function(){
+Route::get('/coba1', function(){
     return ['Muhammad', 'Haris', 'Al', 'Fikri'];
 });
 
 // object json
-Route::get('coba2', function(){
+Route::get('/coba2', function(){
     return[
         'Nama' => "Muhammad Haris Al Fikri",
         'kelas' => "XII RPL 5",
@@ -37,7 +37,7 @@ Route::get('coba2', function(){
 });
 
 // object json
-Route::get('coba3', function(){
+Route::get('/coba3', function(){
     return response() ->json(
         [
             'Nama' => "Muhammad Haris Al Fikri",
